@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-import Logo from '../../../static/assets/images/logo.jpg';
+import Logo from '../../../static/assets/images/logo2.jpg';
 
 export default class NavigationBar extends Component {
     constructor() {

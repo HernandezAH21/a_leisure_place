@@ -12,7 +12,7 @@ export default class Home extends Component {
   render() {
       return (
           <div>
-              
+              HI WORLD!!! 
           </div>
       )
   }

@@ -17,8 +17,8 @@ export default class App extends Component {
             <NavigationBar/>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
               <Route path="/profile" component={Profile} />
+              <Route path="/about" component={About} />
               <Route path="/world" component={World} />
             </Switch>
           </div>

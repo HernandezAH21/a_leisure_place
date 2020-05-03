@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import HomeContainer from "../contents/home-container";
+
 export default class Home extends Component {
   constructor(props) {
       super(props)
@@ -12,7 +14,7 @@ export default class Home extends Component {
   render() {
       return (
           <div>
-              HI WORLD!!! 
+              <HomeContainer />
           </div>
       )
   }

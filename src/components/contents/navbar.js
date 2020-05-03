@@ -13,8 +13,8 @@ export default class NavigationBar extends Component {
         return (
             <div className="navigation-wrapper">
                 <div className="left-side">
-                    <div className="nav-link-wrapper">
-                        <NavLink exact to="/" className="logo" activeClassName="nav-link-active">
+                    <div className="nava-link-wrapper">
+                        <NavLink exact to="/" className="logo" activeClassName="nava-link-active">
                             <img src={Logo} />
                         </NavLink>
                     </div>
@@ -30,13 +30,13 @@ export default class NavigationBar extends Component {
 
                 <div className="right-side">
                     <div className="nav-link-wrapper">
-                        <NavLink to="/about" activeClassName="nav-link-active">
-                            About
+                        <NavLink to="/profile" activeClassName="nav-link-active">
+                            Profile
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/profile" activeClassName="nav-link-active">
-                            Profile
+                        <NavLink to="/about" activeClassName="nav-link-active">
+                            About
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">

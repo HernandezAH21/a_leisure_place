@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import HomeContainer from "../contents/home-container";
+import NavigationBar from "../navbars/home-navbar";
+
 
 export default class Home extends Component {
   constructor(props) {
@@ -14,7 +16,8 @@ export default class Home extends Component {
   render() {
       return (
           <div>
-              <HomeContainer />
+                <NavigationBar/>
+                <HomeContainer />
           </div>
       )
   }

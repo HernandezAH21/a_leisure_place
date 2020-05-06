@@ -3,8 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 
 import Logo from '../../../static/assets/images/logo2.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default class NavigationBar extends Component {
+export default class WorldBar extends Component {
     constructor() {
       super();
     } 
@@ -20,28 +21,28 @@ export default class NavigationBar extends Component {
                     </div>
                 </div>
 
-                <div className="center-side">
+                {/* <div className="center-side">
                     <div className="nav-link-wrapper">
                         <a  activeClassName="nav-link-active">
                             <input id="filter" type="text" placeholder="Search" />
                         </a>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="right-side">
                     <div className="nav-link-wrapper">
                         <NavLink to="/profile" activeClassName="nav-link-active">
-                            Profile
+                            <FontAwesomeIcon icon="user"/> Profile
                         </NavLink>
                     </div>
-                    <div className="nav-link-wrapper">
+                    {/* <div className="nav-link-wrapper">
                         <NavLink to="/about" activeClassName="nav-link-active">
-                            About
+                         About
                         </NavLink>
-                    </div>
+                    </div> */}
                     <div className="nav-link-wrapper">
                         <NavLink to="/world" activeClassName="nav-link-active">
-                            World
+                        <FontAwesomeIcon icon="globe-americas"/> World
                         </NavLink>
                     </div> 
                 </div>  

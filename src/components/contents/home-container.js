@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Typist from 'react-typist';
+import { NavLink } from 'react-router-dom';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class HomeContainer extends Component {
 
@@ -22,13 +25,10 @@ export default class HomeContainer extends Component {
                         songs or playlists,
                         <br />
                         <Typist.Delay ms={100} />
-                        favorite online video games,
+                        online video games,
                         <br />
                         <Typist.Delay ms={100} />
-                        favorite episode of your series,
-                        <br />
-                        <Typist.Delay ms={100} />
-                        favorite movie,
+                        episode of your series or movies,
                         <br />
                         <Typist.Delay ms={100} />
                         photos and selfies,
@@ -40,7 +40,10 @@ export default class HomeContainer extends Component {
                         fast and everything in one place ..
                         <br />
                         <Typist.Delay ms={100} />
-                        Click here to build your own leisure place.
+                        Click here to build your own leisure place. <a><FontAwesomeIcon icon="hand-point-right"/></a>
+                        <NavLink exact to="/create" className="logo" activeClassName="nava-link-active">
+                            <button> Hi! </button>
+                        </NavLink>                        
                         <br />
                     </Typist>
                 </div>
